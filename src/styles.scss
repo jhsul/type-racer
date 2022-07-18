@@ -1,0 +1,63 @@
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+em {
+  font-style: normal;
+}
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.page {
+  background-color: white;
+  max-width: 100%;
+  width: 600pt;
+  padding: 20pt;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-text {
+  //position: absolute;
+  &--hidden {
+    color: transparent;
+    user-select: none;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.text-input {
+  flex: 1;
+}
+
+.text-author {
+  font-style: italic;
+}
+
+.text-completed {
+  background-color: lightgreen;
+}
+
+.text-current {
+  background-color: yellow;
+}
+
+.text-error {
+  background-color: lightcoral;
+}
+
+.game-progress {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
